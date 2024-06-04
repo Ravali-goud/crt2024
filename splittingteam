@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int n,t;
+    scanf("%d %d",&n,&t);
+    int r1=n/t;
+    int r2=n%t;
+    printf("The number of students in each team is %d and left out is %d",r1,r2);
+    return 0;
+}
