@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+
+int main() {
+    // Write C code here
+    //switch
+    int a=12;
+    switch(a)
+    {
+        case 1:
+        printf("Java");
+        break;
+        case 2:
+        printf("Python");
+        break;
+        case 3:
+        printf("fortran");
+        break;
+        default:
+        printf("Invalid");
+    }
+    return 0;
+}
