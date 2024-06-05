@@ -11,7 +11,7 @@ int main() {
     int r1=a*75;
     int r2=c*30;
     int t=r1+r2;
-    if(t<total)
+    if(t<=total)
     {
         printf("Boat is stable");
     }
