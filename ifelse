@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+   int a;
+   scanf("%d",&a);
+   int r=a%2;
+   if(r==0)
+   {
+       printf("even number");
+   }
+   else
+   {
+       printf("odd number");
+   }
+    return 0;
+}
