@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+
+int main() {
+    // Write C code here
+    if(0)
+    {
+        printf("java");
+    }
+    else
+    {
+        printf("python");
+    }
+  
+    return 0;
+}
