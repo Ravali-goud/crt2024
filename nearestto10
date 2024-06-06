@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int n,remainder,r;
+    scanf("%d",&n);
+   remainder=n%10;
+    if(remainder>=5)
+    {
+        r=n+(10-remainder);
+        printf("%d",r);
+    }
+    else
+    {
+        printf("%d",n-remainder);
+    }
+    
+    return 0;
+}
