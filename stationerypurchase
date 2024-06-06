@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    int q,p,t; 
+    float d=0,g,n,tad;
+    scanf("%d%d",&q,&p); 
+    t=p*q; 
+     printf("Quantity Ordered %d\n",q);
+    printf("Price per item is Rs.%d\n",p); 
+    printf("Total Amount = Rs.%d\n",t);
+    if(q>200)
+    {
+        d=t*0.20;
+         tad=t-d;
+        g=tad*0.18;
+        printf("Discount Earned = Rs.%.1f\n",d);
+        printf("Amount after Discount - Rs.%.1f\n",tad);
+        n=tad+g;
+    }
+    else{
+    d=t*0.20;
+         tad=t-d;
+        g=t*0.18;
+        n=t+g;
+        
+    }
+    
+    
+   
+    printf("GST - Rs.%.1f\n",g); 
+    printf("Net Amount Payable is Rs.%.1f",n);
+    return 0;
+}
