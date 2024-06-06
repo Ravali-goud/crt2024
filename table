@@ -1,0 +1,18 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<math.h>
+
+int main() {
+    // Write C code here
+    //armsstrong number
+   int i,n;
+   scanf("%d",&n);
+   for(i=1;i<=10;i++)
+   {
+       
+       printf("%d*%d=%d\n",i,n,i*n);
+   }
+   
+   
+    return 0;
+}
