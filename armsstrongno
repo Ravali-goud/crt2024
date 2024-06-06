@@ -1,0 +1,24 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<math.h>
+
+int main() {
+    // Write C code here
+    //armsstrong number
+   int n,d,s=0,r,temp;
+   scanf("%d",&n);
+   temp=n;
+   while(n>0)
+   {
+       d=n%10;
+       n=n/10;
+       s=s+d*d*d;
+   }
+   if(s==temp)
+   printf("Armsstrong no");
+   else
+   printf("Not an Armsstrong no");
+   
+   
+    return 0;
+}
