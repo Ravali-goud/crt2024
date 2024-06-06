@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    int d,m,y,s,sum;
+scanf("%d%d%d%d",&d,&m,&y,&s);
+sum=(d+m+y)%12;
+if(sum==0)
+{
+    printf("Cinema Day");
+}
+else
+{
+    printf("Not a Cinema Day");
+}
+
+ 
+    return 0;
+}
