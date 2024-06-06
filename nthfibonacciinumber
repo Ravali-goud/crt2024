@@ -8,7 +8,7 @@ int main() {
    int i,n,r1=0,r2=1,r3;
    scanf("%d",&n);
    
-   for(i=1;i<=n;i++)
+   for(i=1;i<=n-2;i++)
    {
        r3=r1+r2;
        
