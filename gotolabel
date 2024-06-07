@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    // Write C code here
+  int i=1;
+  vignan:
+  printf("%d ",i);
+  i++;
+  if(i<=10)
+  goto vignan;
+    
+
+    return 0;
+}
