@@ -1,27 +1,38 @@
-#include <stdio.h>
-int main() {
-    // Write C code here
-   while(1)
-   {
-       printf("Enter name\n");
-       char name[20];
-       scanf("%s",name);
-       printf("Enter father name\n");
-       char fname[20];
-       scanf("%s",fname);
-       printf("Enter branch\n");
-       char branch[10];
-       scanf("%s",branch);
-        fflush(stdin);
-       printf("Enter another record(y/n)\n");
-       char ch;
-      
-       ch=getchar();
-       if(ch=='n' || ch=='N')
-       break;
-   }
-  
-    
 
+#include <stdio.h>
+int main()
+{
+    while(1)
+    {
+        printf("enter name:");
+        char name[20];
+        scanf("%s",name);
+        printf("enter father name:");
+        char fname[20];
+        scanf("%s",fname);
+        printf("enter branch:");
+        char branch[10];
+        scanf("%s",branch);
+        printf("enter marital status 1 for single 2 for married");
+        int a;
+        scanf("%d",&a);
+        if(a==1)
+        continue;
+        
+        printf("enter spouse name");
+        char sname[20];
+        scanf("%s",sname);
+        printf("enter no of children");
+        int b;
+        scanf("%d",&b);
+        
+        printf("enter another record(y/n)");
+        char ch;
+        fflush(stdin);
+        scanf("%c",&ch);
+        if(ch=='n'  ||   ch=='N')
+        break;
+    }
+    
     return 0;
 }
