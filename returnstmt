@@ -1,0 +1,17 @@
+#include <stdio.h>
+int sum(int x,int y)
+{
+    int r=x+y;
+    return r;
+    
+}
+
+int main() {
+    // Write C code here
+    int a,b;
+    scanf("%d%d",&a,&b);
+   int k=sum(a,b);
+   printf("%d",k);
+   
+    return 0;
+}
