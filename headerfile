@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include "arithmetic.c"
+int main()
+{
+    int a,b;
+    printf("Enter two numbers");
+    scanf("%d%d",&a,&b);
+    int r1=add(a,b);
+    printf("%d\n",r1);
+}
