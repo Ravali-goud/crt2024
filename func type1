@@ -1,0 +1,15 @@
+#include <stdio.h>
+void sum()
+{
+    int x,y;
+    scanf("%d%d",&x,&y);
+    int area=x*y;
+    printf("Area of reactangle %dsqm\n",area);
+    
+}
+
+int main() {
+    // Write C code here
+   sum();
+    return 0;
+}
