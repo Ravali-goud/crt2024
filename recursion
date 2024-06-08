@@ -1,0 +1,10 @@
+#include<stdio.h>
+void fun()
+{
+    printf("good mrng\n");
+    fun();
+}
+int main()
+{
+   fun();
+}
