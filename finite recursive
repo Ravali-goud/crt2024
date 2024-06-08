@@ -9,6 +9,6 @@ void fun(int c)
 }
 int main()
 {
-    int c;
-   fun(c+1);
+    int c=1;
+   fun(c);
 }
