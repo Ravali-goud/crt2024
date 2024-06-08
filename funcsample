@@ -1,0 +1,14 @@
+#include <stdio.h>
+void show()
+{
+    printf("Vignan\n");
+    printf("Hyd\n\n");
+}
+
+int main() {
+    // Write C code here
+   show();
+   show();
+   show();
+    return 0;
+}
