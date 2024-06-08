@@ -1,0 +1,14 @@
+#include<stdio.h>
+void fun(int c)
+{
+    if(c<=5)
+    {
+    printf("good mrng\n");
+    fun(c+1);
+    }
+}
+int main()
+{
+    int c;
+   fun(c+1);
+}
