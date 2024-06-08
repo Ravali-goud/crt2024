@@ -1,0 +1,19 @@
+#include <stdio.h>
+void biggest()
+{
+    int x,y,z;
+    scanf("%d%d%d",&x,&y,&z);
+   if(x>y&&x>z)
+   printf("%d",x);
+   else if(y>z)
+   printf("%d",y);
+   else
+   printf("%d",z);
+    
+}
+
+int main() {
+    // Write C code here
+   biggest();
+    return 0;
+}
