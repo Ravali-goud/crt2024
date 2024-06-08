@@ -1,0 +1,15 @@
+#include <stdio.h>
+int area()
+{
+    int n,d;
+    scanf("%d%d",&d,&n);
+    int r=n*d;
+    return r;
+}
+
+int main() {
+    // Write C code here
+    int k=area();
+  printf("%d",k);
+    return 0;
+}
