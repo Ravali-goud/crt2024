@@ -1,0 +1,17 @@
+//factorial of a given numbers
+#include <stdio.h>
+int fac(int n)
+{
+    if(n==0)
+    return 1;
+    else
+    return n*fac(n-1);
+}
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int r=fac(n);
+    printf("%d",r);
+}
