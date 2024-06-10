@@ -1,0 +1,18 @@
+#include <stdio.h>
+int a;
+void increment()
+{
+    a++;
+    printf("%d\t",a);
+}
+
+
+int main() {
+    // Write C code here
+ 
+  printf("%d\t",a);
+  increment();
+  increment();
+  return 0;
+  
+}
