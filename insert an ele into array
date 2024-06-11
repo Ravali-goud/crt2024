@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int n,i,k,b;
+
+   
+    scanf("%d",&n);
+
+    
+    int a[n+1];
+
+    
+    for (i=0;i<n;i++) {
+        scanf("%d",&a[i]);
+    }
+
+   
+    scanf("%d%d",&k,&b);
+
+    
+    if(k<1||k>n+1) {
+        printf("Invalid Input");
+    } else {
+        
+        for (i=n;i>=k;i--) {
+            a[i]=a[i-1];
+        }
+
+       
+        a[k-1]=b;
+
+        
+        for(i=0;i<=n;i++) {
+            printf("%d\n",a[i]);
+        }
+    }
+
+    return 0;
+}
