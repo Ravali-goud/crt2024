@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    int n,s=1,r=1,t;
+    scanf("%d",&n);
+    if(n==1||n==2)
+    {
+        printf("1");
+    }
+    else
+    {
+    for(int i=3;i<=n;i++)
+    {
+        t=s+r;
+        s=r;
+        r=t;
+    }
+    printf("%d",t);
+    }
+    return 0;
+}
