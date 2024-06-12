@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    int n,i,a1,a2;
+    scanf("%d %d %d", &n, &a1, &a2);
+    int a[n];
+    for(i=0;i<n;i++)
+    {
+        scanf("%d ", &a[i]);
+        if(a[i]>=a1&&a[i]<=a2)
+         
+    
+        printf("%d ",a[i]);
+    
+    }
+    
+    return 0;
+}
