@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include<limits.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int n;
+    scanf("%d",&n);
+    int t=INT_MAX;
+    while(n!=0)
+    {
+        int r;
+        r=n%10;
+        if(r<t)
+            {
+                t=r;
+            }
+        
+        n=n/10;
+        
+    }
+    printf("%d",t);
+    return 0;
+}
