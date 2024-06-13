@@ -15,6 +15,7 @@ int main()
 	{
 		str3[i+j+1]=str2[j];
 	}
+str[i+j]!='\0';
 	printf("%s",str3);
 	
 }
