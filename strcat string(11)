@@ -10,9 +10,10 @@ int main()
 	{
 		str3[i]=str1[i];
 	}
+	str3[i]=' ';
 	for(j=0;str2[j]!='\0';j++)
 	{
-		str3[i+j]=str2[j];
+		str3[i+j+1]=str2[j];
 	}
 	printf("%s",str3);
 	
