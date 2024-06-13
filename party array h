@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int T;
+    scanf("%d",&T);
+    
+    int E[T],L[T];
+    for (int i=0;i<T;i++) {
+        scanf("%d",&E[i]);
+    }
+    
+    for (int i=0;i<T;i++) {
+        scanf("%d",&L[i]);
+    }
+    
+    int current_guests=0;
+    int max_guests=0;
+    
+    for (int i=0;i<T;i++) {
+        current_guests +=E[i]-L[i];
+        if (current_guests>max_guests) {
+            max_guests=current_guests;
+        }
+    }
+    
+    printf("%d\n",max_guests);
+    return 0;
+}
