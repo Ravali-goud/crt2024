@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+ 
+    int m,n;
+    scanf("%d%d",&m,&n);
+   int a[m][n],b[m][n],s[m][n];
+   int i1,j1;
+   for(i1=0;i1<m;i1++)
+   {
+       for(j1=0;j1<n;j1++)
+       scanf("%d",&a[i1][j1]);
+   }
+   for(i1=0;i1<m;i1++)
+   {
+       for(j1=0;j1<n;j1++)
+        scanf("%d",&b[i1][j1]);
+   }
+    for(i1=0;i1<m;i1++)
+    {
+        for(j1=0;j1<n;j1++)
+        {
+            s[i1][j1]=a[i1][j1]+b[i1][j1];
+            printf("%d ",s[i1][j1]);
+         }printf("\n");
+    }
+            
+        
+    
+   
+    
+ 
+    return 0;
+}
+    
