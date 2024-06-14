@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int admno,mat,phy,che,tot;
+	float avg;
+	char name[40];
+	FILE *p;
+	printf("Enter admno:");
+	scanf("%d",&admno);
+	printf("Enter name:");
+	scanf("%s",name);
+	printf("Enter 3 subjs marks:");
+	scanf("%d%d%d",&mat,&phy,&che);
+	tot=mat+phy+che;
+	avg=tot/3.0;
+	p=fopen("marks.txt","w");
+	fprintf(p,"Admission no		=%d\n",admno);
+	fprintf(p,"Name				=%d\n",name);
+	fprintf(p,"maths			=%d\n",mat);
+	fprintf(p,"physics			=%d\n",phy);
+	fprintf(p,"chemistry		=%d\n",phy);
+	fprintf(p,"total			=%d\n",tot);
+	fprintf(p,"average			=%d\n",avg);
+	fclose(p);
+
+}
