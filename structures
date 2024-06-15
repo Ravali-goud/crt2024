@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct Employee
+{
+	int empno;
+	char name[30];
+	float basalary,hra,da,pf,grosssal,netsal;
+}e;
+int main()
+{
+printf("Enter employee no");
+scanf("%d",&e.empno);
+printf("Enter employee name");	
+scanf("%s",e.name);
+printf("Enter employee basic salary");
+scanf("%f",&e.basalary);
+e.hra=e.basalary*15/100;
+e.da=e.basalary*10/100;
+e.pf=e.basalary*5/100;
+e.grosssal=e.basalary+e.hra+e.da;
+e.netsal=e.grosssal-e.pf;
+printf("Employee no	            	=%d\n",e.empno);
+printf("Employee name		        =%s\n",e.name);
+printf("basic salary		        =%.2f\n",e.basalary);
+printf("hra					        =%.2f\n",e.hra);
+printf("da					          =%.2f\n",e.da);
+printf("pf				            =%.2f\n",e.pf);
+printf("grosssalary				=%.2f\n",e.grosssal);
+printf("net salary				=%.2f\n",e.netsal);
+
+}
