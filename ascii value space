@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    char a=' ';
+    printf("%d",a*10);
+    printf("\nTry programiz.pro");
+
+    return 0;
+}
