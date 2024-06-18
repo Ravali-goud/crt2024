@@ -1,0 +1,5 @@
+class HelloWorld {
+    public static void main(String[] ravali) {
+        System.out.println("Try programiz.pro");
+    }
+}
