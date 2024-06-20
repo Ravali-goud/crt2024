@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    int s1,l,b;
+    float r;
+    s1=s.nextInt();
+    l=s.nextInt();
+    b=s.nextInt(); 
+    r=s.nextFloat();
+                                            
+    int r1=s1*s1;
+    System.out.println(r1);
+    int r2=l*b;
+   System.out.println(r2);
+   float r3=(float)3.14*r*r;
+   System.out.printf("%.2f",r3);
+    
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
