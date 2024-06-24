@@ -1,0 +1,13 @@
+import java.util.*;
+class Test4
+{
+public static void main(String args[])
+{
+int a[]={20,38,38,84,3,45};
+
+for(int x:a)
+{
+System.out.println(x);
+}
+}
+}
