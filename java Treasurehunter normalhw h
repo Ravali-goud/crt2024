@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int coins,x,y;
+        coins=s.nextInt();
+    x=s.nextInt();
+        y=s.nextInt();
+    int longben=coins*x/100;
+    coins=coins-longben;
+    int blackbeard=coins*y/100;
+    coins=coins-blackbeard;
+    int other=coins/3;
+    System.out.println(longben);
+        System.out.println(blackbeard);
+        System.out.println(other);
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
