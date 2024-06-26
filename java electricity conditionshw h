@@ -1,0 +1,41 @@
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+       
+   
+       int n=s.nextInt();
+    if(n<=200)
+    {
+        float b=0.5f;
+        float a=(int)(n*b);    
+        System.out.printf("Rs.%.0f",a);
+    }
+    else 
+        if(n<=400)
+        {
+            float b=0.65f;
+            float a=(int)(n*b+100);
+            System.out.printf("Rs.%.0f",a);
+        }
+    else
+        if(n<=600)
+        {
+            float b=0.80f;
+            float a=(int)(n*b+200);
+            System.out.printf("Rs.%.0f",a);
+        }
+    else
+    {
+        float b=1.25f;
+        float a=(int)(n*b+425);
+        System.out.printf("Rs.%.0f",a);
+    }
+             
+    }
+}
