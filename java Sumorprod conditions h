@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int a,b;
+    a=s.nextInt();
+        b=s.nextInt();
+    int p=a*b;
+    if(p>1000)
+    {
+        int n=a+b;
+        System.out.println(n);
+    }
+    else
+    {
+        System.out.println(p);
+    }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
