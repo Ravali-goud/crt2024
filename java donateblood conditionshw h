@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int age,wt;
+        float hem;
+   age=s.nextInt();
+        wt=s.nextInt();
+        hem=s.nextFloat();
+    if(age>=18&&wt>=45&&hem>=5.5)
+    {
+        System.out.println("He or She can donate blood");
+    }
+    else{
+        System.out.println("He or She unable to donate blood");
+    }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
