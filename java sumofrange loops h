@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int a,b,sum=0;
+    a=s.nextInt();
+         b=s.nextInt();
+    for(int i=a;i<=b;i++)
+    {
+        sum=sum+a;
+        a=a+1;
+    }
+    System.out.println(sum);
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
