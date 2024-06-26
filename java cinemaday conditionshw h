@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int d,m,y,sc,sum;
+        d=s.nextInt();
+        m=s.nextInt();
+        y=s.nextInt();
+        sc=s.nextInt();
+sum=(d+m+y)%12;
+if(sum==0)
+{
+    System.out.println("Cinema Day");
+}
+else
+{
+    System.out.println("Not a Cinema Day");
+}
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
