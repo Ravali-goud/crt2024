@@ -1,0 +1,37 @@
+mport java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n,r1,r=0,s;
+n=sc.nextInt();
+    while(n>0)
+    {
+        r1=n%10;
+        if(r1%2==0)
+        {
+            s=r1+1;
+        }
+        else
+        {
+            s=r1-1;
+         }
+        n=n/10;
+        r=r*10+s;
+    }
+    n=r;
+    r=0;
+    while(n>0)
+    {
+        r1=n%10;
+        n=n/10;
+        r=r*10+r1;
+    }
+    System.out.print(r);
+    
+    
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
