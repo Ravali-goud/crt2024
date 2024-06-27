@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+   
+        int n, sum = 0, temp = 2;
+scanf("%d",&n);;
+for(int i = 1; i <= n; i++) {
+    sum = sum+temp;
+    temp = temp * 10 + 2;
+}
+printf( "%d",sum);
+        
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    
+    return 0;
+}
