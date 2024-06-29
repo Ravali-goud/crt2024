@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+         Scanner sc=new Scanner(System.in); int n=sc.nextInt(); int temp,r,count=0; temp=n;
+
+    while(n!=0)
+    {
+       n=n/10;
+        count++;
+    }
+    n=temp;
+    r=n%count;
+    System.out.println(r);
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
