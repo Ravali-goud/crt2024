@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,r,count=0;
+    scanf("%d",&n);
+    int temp=n;
+         while(n!=0)
+    {
+       n=n/10;
+        count++;
+    }
+    n=temp;
+    r=n%count;
+    printf("%d",r);    
+    
+
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
