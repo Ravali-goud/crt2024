@@ -1,0 +1,42 @@
+import java.util.*;
+class Test2
+{
+static void quickSort(int[] a,int lindex,int rindex)
+{
+if(lindex>=rindex)
+return;
+int pivot,lp,rp,temp;
+pivot=a[rindex];
+lp=lindex;
+rp=rindex;
+while(lp<rp)
+{
+while(a[lp]<=pivot&&lp<rp)
+lp++;
+while(a[rp]>=pivot&&lp<rp)
+rp--;
+temp=a[lp];
+a[lp]=a[rp];
+a[rp]=temp;
+}
+temp=a[lp];
+a[lp]=a[rindex];
+a[rindex]=temp;
+quickSort(a,lindex,lp-1);
+quickSort(a,lp+1,rindex);
+}
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+int n=s.nextInt();
+int[]a=new int[n];
+for(int i=0;i<n;i++)
+{
+a[i]=s.nextInt();
+}
+System.out.println(Arrays.toString(a));
+quickSort(a,0,a.length-1);
+System.out.println(Arrays.toString(a));
+}
+}
+ 
