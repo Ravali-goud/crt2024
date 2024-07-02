@@ -1,0 +1,18 @@
+import java.util.*;
+class Test2
+{
+public static void main(String[] args)
+{
+Scanner s= new Scanner(System.in);
+String str=s.nextLine();
+String str1=s.nextLine();
+if(str.contains(str1))
+{
+System.out.println("string is found");
+}
+else
+{
+System.out.println("string is not found");
+}
+}
+}
