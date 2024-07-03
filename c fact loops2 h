@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int sum_of_digits(int n) {
+    while (n >= 10) {
+        int sum = 0;
+        while (n > 0) {
+            sum += n % 10;
+            n /= 10;
+        }
+        n = sum;
+    }
+    return n;
+}
+int factorial(int n) {
+    if (n <= 1) return 1;
+    return n * factorial(n - 1);
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    int sod = sum_of_digits(n);
+    int result = factorial(sod);
+    printf("%d\n", result);
+    return 0;
+}
