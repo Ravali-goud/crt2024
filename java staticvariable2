@@ -1,0 +1,21 @@
+import java.util.*;
+class Student
+{
+int a=10;
+static int b=20;
+}
+class Test
+{
+public static void main(String args[])
+{
+System.out.println(Student.b);
+Student s1=new Student();
+System.out.println(s1.a+" "+s1.b);
+Student s2=new Student();
+System.out.println(s2.a+" "+s2.b);
+s1.a=888;
+s1.b=999;
+System.out.println(s1.a+" "+s1.b);
+System.out.println(s2.a+" "+s2.b);
+}
+}
