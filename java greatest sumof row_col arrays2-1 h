@@ -1,0 +1,67 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) 
+    {
+        Scanner s=new Scanner(System.in);
+        int n, m, i, j,r,c;
+        n=s.nextInt();
+        m=s.nextInt();
+        int a[][]=new int[n][m];
+    
+    // Reading the matrix elements
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < m; j++) {
+            a[i][j]=s.nextInt();
+        }
+    }
+    
+    int row_sums[]=new int[n];
+    int col_sums[]=new int[m];
+    int max_row_sum = 0, max_col_sum = 0;
+    int max_row_index = 0, max_col_index = 0;
+    
+    // Initialize row and column sums to zero
+    for (i = 0; i < n; i++) row_sums[i] = 0;
+    for (j = 0; j < m; j++) col_sums[j] = 0;
+    
+    // Calculate row sums and find the row with the maximum sum
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < m; j++) {
+            row_sums[i] += a[i][j];
+        }
+        if (row_sums[i] > max_row_sum) {
+            max_row_sum = row_sums[i];
+            max_row_index = i;
+        }
+    }
+    
+    // Calculate column sums and find the column with the maximum sum
+    for (j = 0; j < m; j++) {
+        for (i = 0; i < n; i++) {
+            col_sums[j] += a[i][j];
+        }
+        if (col_sums[j] > max_col_sum) {
+            max_col_sum = col_sums[j];
+            max_col_index = j;
+            
+        }
+    }
+    
+    // Print row sums
+    for (i = 0; i < n; i++) {
+        System.out.print( row_sums[i]+" ");
+    }
+    System.out.print("\nRow "+(max_row_index+1)); // Adding 1 to convert to 1-based index
+    System.out.println();    
+    // Print column sums
+    for (j = 0; j < m; j++) {
+         System.out.print( col_sums[j]+" ");
+    }
+     System.out.print("\nColumn "+ (max_col_index+1)); // Adding 1 to convert to 1-based index
+    
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
