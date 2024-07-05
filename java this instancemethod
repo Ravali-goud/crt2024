@@ -1,0 +1,29 @@
+import java.util.*;
+class Sample
+{
+int admno;
+String name;
+void get(int x,String y)
+{
+this.admno=x;
+this.name=y;
+}
+void show()
+{
+System.out.println(this);
+System.out.println(this.admno+" "+this.name);
+}
+}
+
+class Test3
+{
+public static void main(String args[])
+{
+Sample s1=new Sample();
+s1.get(111,"aaa");
+s1.show();
+Sample s2=new Sample();
+s2.get(222,"kkk");
+s2.show();
+}
+}
