@@ -1,0 +1,63 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int n, m, i, j;
+    scanf("%d%d", &n, &m);
+    int a[n][m];
+    
+    // Reading the matrix elements
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < m; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+    
+    int row_sums[n];
+    int col_sums[m];
+    int max_row_sum = 0, max_col_sum = 0;
+    int max_row_index = 0, max_col_index = 0;
+    
+    // Initialize row and column sums to zero
+    for (i = 0; i < n; i++) row_sums[i] = 0;
+    for (j = 0; j < m; j++) col_sums[j] = 0;
+    
+    // Calculate row sums and find the row with the maximum sum
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < m; j++) {
+            row_sums[i] += a[i][j];
+        }
+        if (row_sums[i] > max_row_sum) {
+            max_row_sum = row_sums[i];
+            max_row_index = i;
+        }
+    }
+    
+    // Calculate column sums and find the column with the maximum sum
+    for (j = 0; j < m; j++) {
+        for (i = 0; i < n; i++) {
+            col_sums[j] += a[i][j];
+        }
+        if (col_sums[j] > max_col_sum) {
+            max_col_sum = col_sums[j];
+            max_col_index = j;
+        }
+    }
+    
+    // Print row sums
+    for (i = 0; i < n; i++) {
+        printf("%d ", row_sums[i]);
+    }
+    printf("\nRow %d\n", max_row_index + 1); // Adding 1 to convert to 1-based index
+    
+    // Print column sums
+    for (j = 0; j < m; j++) {
+        printf("%d ", col_sums[j]);
+    }
+    printf("\nColumn %d\n", max_col_index + 1); // Adding 1 to convert to 1-based index
+    
+    return 0;
+}
