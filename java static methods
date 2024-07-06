@@ -1,0 +1,30 @@
+import java.util.*;
+class Sample
+
+{
+int a=45;
+static int b=87;
+void show()
+{
+System.out.println("Instance:"+a+" "+b);
+}
+Sample()
+{
+System.out.println("Constructor:"+a+" "+b);
+}
+static void display()
+{
+Sample t=new Sample();
+System.out.println("Static:"+t.a+" "+b);
+}
+}
+class Test3
+{
+public static void main(String args[])
+{
+Sample.display();
+Sample s1=new Sample();
+s1.show();
+s1.display();
+}
+}
