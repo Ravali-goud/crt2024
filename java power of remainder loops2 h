@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution 
+{
+    public static void main(String[] args) 
+    {
+        Scanner s=new Scanner(System.in);
+        int num,n,a;
+        num=s.nextInt();
+        n=num%10;
+        a=num/10;
+        int k=(int)Math.pow(a,n);
+        System.out.println(k);
+    }
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+}
