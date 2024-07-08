@@ -1,0 +1,59 @@
+class GrandFather
+{
+String gfname;
+int p1;
+void getGrandFather(String gfname,int p1)
+{
+this.gfname=gfname;
+this.p1=p1;
+}
+void showGrandFather()
+{
+System.out.println("GrandFather name="+gfname);
+System.out.println("GrandFather property="+p1);
+}
+}
+class Father extends GrandFather
+{
+String fname;
+int p2;
+void getFather(String fname,int p2)
+{
+this.fname=fname;
+this.p2=p2;
+}
+void showFather()
+{
+System.out.println("Father name="+fname);
+System.out.println("Father property="+p2);
+}
+}
+class Daughter extends Father
+{
+String dname;
+int p3;
+void getDaughter(String dname,int p3)
+{
+this.dname=dname;
+this.p3=p3;
+}
+void showDaughter()
+{
+System.out.println("Daughter name="+dname);
+System.out.println("Daughter property="+p3);
+System.out.println("Daghter total property="+(p1+p2+p3));
+}
+}
+class Test2
+{
+public static void main(String args[])
+{
+Daughter d1=new Daughter();
+d1.getGrandFather("kkk",10000);
+d1.showGrandFather();
+d1.getFather("rrr",20000);
+d1.showFather();
+d1.getDaughter("cc",30000);
+d1.showDaughter();
+}
+}
