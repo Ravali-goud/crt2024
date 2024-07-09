@@ -1,0 +1,22 @@
+import java.util.*;
+class Test4
+{
+void show(int ...a)
+{
+int r=0;
+for(int x:a)
+{
+r=r+x;
+}
+System.out.println(r);
+}
+public static void main(String[] args)
+{
+Test4 t1=new Test4();
+t1.show();
+t1.show(235,568);
+t1.show(78,22);
+t1.show('A','B');
+//t1.show(34.5,67.8);
+}
+}
