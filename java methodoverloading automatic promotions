@@ -1,0 +1,26 @@
+import java.util.*;
+class Test4
+{
+void add(int a,int b)
+{
+System.out.println("Two int arg method");
+}
+void add(int a,int b,int c)
+{
+System.out.println("Three int arg method");
+}
+void add(float a,float b)
+{
+System.out.println("Two float arg method");
+}
+public static void main(String[] args)
+{
+Test4 t1=new Test4();
+t1.add(12,33,55);
+t1.add(23.5f,56.8f);
+t1.add(78,22);
+t1.add('A','B');
+//t1.add(34.5,67.8);
+}
+}
+
