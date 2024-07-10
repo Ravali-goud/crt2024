@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int a,b;
+    a=s.nextInt();
+        b=s.nextInt();
+    if(a!=0&&b!=0)
+    {
+        if(a>0&&b>0)
+        {
+            System.out.println("1");
+        }
+        else if(a<0&&b>0)
+        {
+             System.out.println("2");
+        }
+        else if(a<0&&b<0)
+        {
+             System.out.println("3");
+        }
+        else if(a>0&&b<0)
+        {
+             System.out.println("4");
+        }
+    }
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
