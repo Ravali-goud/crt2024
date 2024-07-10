@@ -1,0 +1,21 @@
+//to compile javac -d . Second.java
+//to run java pack2.Fifth
+//protected not working
+package pack2;
+import pack1.First1;
+class Fifth
+{
+void show5()
+{
+First1 f1=new First1();
+//System.out.println("a="+f1.a);(public)
+//System.out.println("b="+f1.b);(default)
+//System.out.println("c="+f1.c);(protected)
+System.out.println("d="+f1.d);
+}
+public static void main(String args[])
+{
+Fifth s1=new Fifth();
+s1.show5();
+}
+}
