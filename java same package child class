@@ -1,0 +1,17 @@
+//To compile the program javac -d . Second.java
+//To run java pack1.Second
+package pack1;
+class Second extends First1
+{
+void show2()
+{
+System.out.println("b="+b);
+System.out.println("c="+c);
+System.out.println("d="+d);
+}
+public static void main(String args[])
+{
+Second s1=new Second();
+s1.show2();
+}
+}
