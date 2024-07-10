@@ -1,0 +1,14 @@
+final class First
+{
+
+}
+class second extends First
+{
+}
+class test
+{
+psvm(String args[])
+{
+Second s1=new Second();
+}
+}
