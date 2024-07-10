@@ -1,0 +1,36 @@
+class Father 
+{
+final void surName()
+{
+System.out.print("K ");
+}
+void designation()
+{
+System.out.println("clerk");
+}
+}
+class Child extends Father
+{
+void getName()
+{
+System.out.println("satish");
+}
+void designation()
+{
+System.out.println("Java Programmer");
+}
+void surName()
+{
+System.out.println("R ");
+}
+}
+class Test
+{
+public static void main(String []args)
+{
+Child c1=new Child();
+c1.surName();
+c1.getName();
+c1.designation();
+}
+}
