@@ -8,7 +8,7 @@ class Fifth
 void show5()
 {
 First1 f1=new First1();
-//System.out.println("a="+f1.a);(public)
+//System.out.println("a="+f1.a);(private)
 //System.out.println("b="+f1.b);(default)
 //System.out.println("c="+f1.c);(protected)
 System.out.println("d="+f1.d);
