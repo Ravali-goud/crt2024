@@ -7,7 +7,7 @@ class Fourth extends First1
 {
 void show4()
 {
-//System.out.println("a="+a);(public)
+//System.out.println("a="+a);(private)
 //System.out.println("b="+b);(default)
 System.out.println("c="+c);
 System.out.println("d="+d);
