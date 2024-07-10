@@ -1,0 +1,19 @@
+//to compile javac -d . Second.java
+//to run java pack2.fourth
+package pack2;
+import pack1.First1;
+class Fourth extends First1
+{
+void show4()
+{
+//System.out.println("a="+a);(public)
+//System.out.println("b="+b);(protected)
+System.out.println("c="+c);
+System.out.println("d="+d);
+}
+public static void main(String args[])
+{
+Fourth s1=new Fourth();
+s1.show4();
+}
+}
