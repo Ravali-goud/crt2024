@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    long long int A, B;
+    
+    // Read input
+    scanf("%lld %lld", &A, &B);
+    
+    // Print the maximum of A and B
+    if (A > B) {
+        printf("%lld\n", A);
+    } else {
+        printf("%lld\n", B);
+    }
+    
+    return 0;
+}
