@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    char c;
+    int age;
+    scanf("%c%d",&c,&age);
+    if((c=='M'&&age>=60)||(c=='m'&&age>=60)||(c=='f'&&age>=58)||(c=='F'&&age>=58))
+    {
+        printf("Senior Citizen");
+    }
+    else
+    {
+        printf("Not A Senior Citizen");
+    }
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
