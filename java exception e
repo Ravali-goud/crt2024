@@ -1,0 +1,29 @@
+import java.util.*;
+class Second
+{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+int n=s.nextInt();
+try
+{
+System.out.println(10/2);
+int a[]={34,65,12};
+System.out.println(a[3]);
+}
+catch(ArithmeticException e)
+{
+System.out.println(10/2);
+}
+catch(ArrayIndexOutOfBoundsException ae)
+{
+System.out.println("Array out of range");
+}
+catch(Exception e)
+{
+System.out.println(e);
+}
+System.out.println("End of the program");
+}
+}
+
