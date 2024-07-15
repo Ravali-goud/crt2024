@@ -1,0 +1,14 @@
+import java.io.*;
+class Testk
+{
+public static void main(String args[])throws Exception
+{
+FileWriter fw=new FileWriter("abc.txt");
+fw.write("W");
+fw.write(65);
+fw.write("LYS");
+fw.write("\n");
+fw.write("CRT");
+fw.close();
+}
+}
