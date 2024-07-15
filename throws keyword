@@ -1,0 +1,12 @@
+class Second
+{
+public static void main(String args[])throws InterruptedException
+{
+System.out.println("Python");
+
+Thread.sleep(3000);
+System.out.println("End of the program");
+Thread.sleep(4000);
+System.out.println("html");
+}
+}
