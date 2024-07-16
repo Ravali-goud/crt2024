@@ -1,0 +1,13 @@
+class Test2
+{
+public static void main(String args[])
+{
+Integer a=135;
+Integer b=new Integer(234);
+System.out.println(a);
+System.out.println(b);
+String str="873";
+Integer c=Integer.valueOf(str);
+System.out.println(c);
+}
+}
