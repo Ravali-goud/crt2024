@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;;
+class Test2
+{
+public static void main(String[] args)throws Exception
+{
+FileReader fr =new FileReader("cities.txt");
+BufferedReader br=new BufferedReader(fr);
+Scanner s=new Scanner(System.in);
+String city =s.next();
+String str=br.readLine();
+while(str!=null)
+{
+if(str!=null)
+{
+System.out.println("City is found");
+break;
+}
+str=br.readLine();
+}
+if(str==null)
+System.out.println("City is not found");
+br.close();
+}
+}
