@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;;
+class Test2
+{
+public static void main(String[] args)throws Exception
+{
+Scanner s=new Scanner(System.in);
+System.out.println("Enter admno");
+int admno=s.nextInt();
+System.out.println("Enter name");
+String name =s.next();
+System.out.println("Enter 3 subjects marks");
+int mat=s.nextInt();
+int phy=s.nextInt();
+int che=s.nextInt();
+int tot=mat+phy+che;
+float avg=(float)tot/3;
+PrintWriter pw=new PrintWriter("marks.txt");
+pw.println("Admisssion no="+admno);
+pw.println("Name="+name);
+pw.println("Maths="+mat);
+pw.println("Physics="+phy);
+pw.println("Chemistry="+che);
+pw.println("Total="+tot);
+pw.println("Average="+avg);
+pw.close();
+}
+}
