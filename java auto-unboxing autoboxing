@@ -1,0 +1,12 @@
+class Test2
+{
+public static void main(String args[])
+{
+int a=316;
+Integer b=a;	//Auto-boxing
+System.out.print(b);
+Double c=34.67;
+double d=c;	//Auto-unboxing
+System.out.print(d);
+}
+}
