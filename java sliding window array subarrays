@@ -1,0 +1,20 @@
+class HelloWorld {
+    public static void main(String[] args) {
+        int a[]={10,20,30,40,50};
+        int n=a.length;
+        for(int i=0;i<n;i++)
+        {
+        for(int j=0;j<n-i;j++)
+        {
+           
+                for(int k=j;k<=j+i;k++)
+                {
+                    System.out.print(a[k]+" ");
+                }
+                System.out.println();
+               
+            }
+        }
+        
+    }
+}
