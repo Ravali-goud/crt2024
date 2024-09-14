@@ -1,0 +1,88 @@
+import java.util.*;
+class Node
+{
+	int data;
+	Node next;
+	Node(int x)
+	{
+		data=x;
+		next=null;
+	}
+}
+class Circularlist
+{
+	Node head;
+	Circularlist()
+	{
+		head=null;
+	}
+	void create(int x)
+	{
+		Node n=new Node(x);
+		if(head==null)
+		{
+			head=n;
+			n.next=head;
+		}
+		else
+		{
+			Node temp=head;
+			while(temp.next!=head)
+			{
+				temp=temp.next;
+			}
+			n.next=head;
+			temp.next=n;
+		}
+	}
+	void display()
+	{
+		if(head==null)
+		{
+			System.out.println("List is empty");
+			return;
+		}
+		else
+		{
+			Node temp=head;
+			while(temp.next!=head)
+			{
+				System.out.print(temp.data+" ");
+				temp=temp.next;
+			}
+			System.out.print(temp.data);
+		}
+
+	}
+}
+class Testcir
+{
+	public static void main(String[] args)
+	{
+		Scanner s=new Scanner(System.in);
+		Circularlist c1=new Circularlist();
+		for(;;)
+		{
+		System.out.println("\nEnter your choice");
+		System.out.println("1.create\n2.print\n3.exit");
+		int ch=s.nextInt();
+		if(ch==1)
+		{
+			System.out.println("Enter an element");
+			int x=s.nextInt();
+			c1.create(x);
+		}
+		else if(ch==2)
+		{
+			c1.display();
+		}
+		else if(ch==3)
+		
+			break;
+		
+		else
+			System.out.println("Invalid choice");
+		}
+	}
+}
+		
