@@ -1,0 +1,97 @@
+//Implement Queue operations using arrays
+import java.util.*;
+class Node
+{
+int data;
+Node next;
+Node(int x)
+{
+data=x;
+next=null;
+}
+}
+class MyQueue
+{
+Node head,tail;
+MyQueue()
+{
+head=null;
+tail=null;
+}
+void enQueue(int x)
+{
+Node n=new Node(x);
+if(n==null)
+{
+System.out.println("Queue is overflow");
+return;
+}
+if(head==null)
+{
+head=tail=n;
+return;
+}
+tail.next=n;
+tail=n;
+}
+void deQueue()
+{
+if(head==null){
+System.out.println("Queue is empty");
+return;
+}
+System.out.println(head.data+"is deleted");
+head=head.next;
+}
+void display()
+{
+if (head==null)
+{
+System.out.println("Queue is empty");
+return;
+}
+Node temp;
+for(temp=head;temp!=null;temp=temp.next)
+{
+System.out.print(temp.data+" ");
+}
+}
+}
+class Test
+{
+ public static void main(String args[])
+ {
+  Scanner s=new Scanner(System.in);
+  MyQueue s1=new MyQueue();
+  for(;;)
+  {
+   System.out.println();
+   System.out.println("1.Enqueue\n2.Dequeue\n,3.Print\n4.exit");
+   System.out.println("Enter your choice");
+   int ch=s.nextInt();
+   if(ch==1)
+   {
+    System.out.println("Enter your element");
+    int x=s.nextInt();
+    s1.enQueue(x);
+   }
+   else if(ch==2)
+   {
+     s1.deQueue();
+   }
+else if(ch==3)
+{
+s1.display();
+}
+else if(ch==4)
+{
+break;
+}
+else
+{
+System.out.println("Invalid choice");
+}
+}
+}
+}
+
