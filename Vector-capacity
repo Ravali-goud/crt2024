@@ -1,5 +1,6 @@
 import java.util.*;
-public class Test
+import java.util.Vector;
+ class Test
 {
 public static void main(String args[])
 {
