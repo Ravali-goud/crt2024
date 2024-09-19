@@ -1,0 +1,38 @@
+import java.util.*;
+
+class Test
+{
+public static void main(String args[])
+{
+HashMap h1=new HashMap();
+h1.put(101,"sss");
+h1.put(123,"kkk");
+h1.put(105,"bbb");
+System.out.println(h1);
+h1.put(333,666);
+h1.put("aaa","ddd");
+h1.put("maths",88);
+System.out.println(h1);
+h1.put(106,"sss");
+System.out.println(h1);
+h1.put(101,"rrr");
+System.out.println(h1);
+
+}
+}
+
+
+//to provide generics concept to hash map
+import java.util.*;
+
+class Test
+{
+public static void main(String args[])       
+{
+HashMap<Integer,String> h1=new HashMap<>();
+h1.put(101,"sss");
+h1.put(123,"kkk");
+h1.put(105,"bbb");
+System.out.println(h1);
+}
+}
