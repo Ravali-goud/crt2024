@@ -1,0 +1,22 @@
+import java.util.*;
+import java.io.*;
+public class TestVector
+{
+public static void main(String args[])throws Exception
+{
+FileInputStream fis=new FileInputStream("abc.txt");
+Properties p=new Properties();
+p.load(fis);
+String x=p.getProperty("a");
+String y=p.getProperty("b");
+int a,b,c;
+a=Integer.parseInt(x);
+b=Integer.parseInt(y);
+c=a+b;
+System.out.println(c);
+fis.close();
+}
+}
+//abc.txt file
+a=100
+b=200
