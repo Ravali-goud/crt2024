@@ -1,0 +1,20 @@
+class Solution {
+       public static void subsequence(List<List<Integer>> a1,ArrayList<Integer> a,int[] nums,int n,int idx)
+       {
+        if(idx==n)
+        {
+            a1.add(new ArrayList<Integer>(a));
+            return;
+        }
+        a.add(nums[idx]);
+        subsequence(a1,a,nums,n,idx+1);
+        a.remove(a.size()-1);
+        subsequence(a1,a,nums,n,idx+1);
+       }
+       public List<List<Integer>> subsets(int[] nums) {
+        ArrayList<Integer> a=new ArrayList<>();
+        List<List<Integer>> a1=new ArrayList<>();
+        subsequence(a1,a,nums,nums.length,0);
+        return a1;
+    }
+}
