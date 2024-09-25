@@ -1,0 +1,69 @@
+import java.util.*;
+class Node
+{
+	int data;
+	Node left,right;
+	Node(int x)
+	{
+		data=x;
+		left=null;
+		right=null;
+	}
+	void insert(int x)
+	{
+		if(data>x)
+		{
+			if(left==null)
+				left=new Node(x);
+			else
+				left.insert(x);
+		}
+		else
+		{
+			if(right==null)
+				right=new Node(x);
+			else
+				right.insert(x);
+		}
+	}
+	void print()
+	{
+		if(left!=null)
+			left.print();
+		System.out.println(data+" ");
+		if(right!=null)
+			right.print();
+	}	
+}
+class Test
+{
+	public static void main(String args[])
+	{
+		Scanner s=new Scanner(System.in);
+		Node n1=new Node(30);
+		while(true)
+		{
+			System.out.println();
+			System.out.println("1.Insert\n2.Print\n3.Exit");
+			System.out.println("Enter your choice");
+			int ch=s.nextInt();
+			if(ch==1)
+			{
+				System.out.println("Enter element");
+				int x=s.nextInt();
+				n1.insert(x);
+			}
+			else if(ch==2)
+			{
+				n1.print();
+			}
+			else if(ch==3)
+			{
+				break;
+			}
+			else
+				System.out.println("Invalid Choice");
+		}
+	}
+}
+			
